@@ -68,7 +68,10 @@
           <td>определённый артикль (мужской)</td>
           <td>Der Mann ist hier.</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/1.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/der.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
         <tr>
@@ -76,7 +79,10 @@
           <td>определённый артикль (женский)</td>
           <td>Die Frau ist schön.</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/2.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/die.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
         <tr>
@@ -84,38 +90,16 @@
           <td>и</td>
           <td>Er und sie gehen.</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/3.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/und.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
-        <tr>
-          <td>in</td>
-          <td>в</td>
-          <td>Ich bin in Berlin.</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/4.mp3">🔊</span>
-          </td>
-        </tr>
-        <tr>
-          <td>zu</td>
-          <td>к, на</td>
-          <td>Ich gehe zu der Schule.</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/5.mp3">🔊</span>
-          </td>
-        </tr>
-        <!-- Добавьте остальные строки для всех 50 слов -->
+        <!-- Continue with other words -->
       </tbody>
     </table>
     <p><a href="index.html">← Вернуться в оглавление</a></p>
   </div>
-  <script>
-    document.querySelectorAll('.play-forvo').forEach(function(element) {
-      element.addEventListener('click', function() {
-        var audioUrl = this.getAttribute('data-audio');
-        var audio = new Audio(audioUrl);
-        audio.play();
-      });
-    });
-  </script>
 </body>
 </html>
