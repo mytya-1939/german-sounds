@@ -39,7 +39,7 @@
     }
     .play-forvo {
       cursor: pointer;
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
     .footer {
       margin-top: 20px;
@@ -71,7 +71,10 @@
           <td>как твёрдое «а»</td>
           <td>Vater</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/1.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/Vater.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
         <tr>
@@ -80,46 +83,13 @@
           <td>как в «папа»</td>
           <td>Mann</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/2.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/Mann.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
-        <tr>
-          <td>e (долгое)</td>
-          <td>[eː]</td>
-          <td>как «э»/мягкое «е»</td>
-          <td>lesen</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/3.mp3">🔊</span>
-          </td>
-        </tr>
-        <tr>
-          <td>e (редуцированное)</td>
-          <td>[ə]</td>
-          <td>как редкое «э»</td>
-          <td>bitte</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/4.mp3">🔊</span>
-          </td>
-        </tr>
-        <tr>
-          <td>i (долгое)</td>
-          <td>[iː]</td>
-          <td>как длинное «и»</td>
-          <td>Liebe</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/5.mp3">🔊</span>
-          </td>
-        </tr>
-        <tr>
-          <td>i (краткое)</td>
-          <td>[ɪ]</td>
-          <td>как в «мир»</td>
-          <td>mit</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/6.mp3">🔊</span>
-          </td>
-        </tr>
-        <!-- Дополните таблицу для остальных гласных -->
+        <!-- Continue with other vowels -->
       </tbody>
     </table>
     
@@ -141,7 +111,10 @@
           <td>как «б»</td>
           <td>ab</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/7.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/ab.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
         <tr>
@@ -150,41 +123,16 @@
           <td>как «д»</td>
           <td>und</td>
           <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/8.mp3">🔊</span>
+            <audio controls>
+              <source src="https://forvo.com/media/files/und.mp3" type="audio/mpeg">
+              Ваш браузер не поддерживает элемент audio.
+            </audio>
           </td>
         </tr>
-        <tr>
-          <td>g</td>
-          <td>[g] или [k]/[x] в конце</td>
-          <td>как «г»/«х»</td>
-          <td>Tag</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/9.mp3">🔊</span>
-          </td>
-        </tr>
-        <tr>
-          <td>p</td>
-          <td>[pʰ]</td>
-          <td>как «п» с придыханием</td>
-          <td>Papa</td>
-          <td>
-            <span class="play-forvo" data-audio="https://api.forvo.com/v2/word/3155591/audio/10.mp3">🔊</span>
-          </td>
-        </tr>
-        <!-- Дополните таблицу для остальных согласных -->
+        <!-- Continue with other consonants -->
       </tbody>
     </table>
     <p class="footer"><a href="index.html">← Вернуться в оглавление</a></p>
   </div>
-  <script>
-    // При клике на элемент с классом play-forvo воспроизводится аудиофайл из data-audio
-    document.querySelectorAll('.play-forvo').forEach(function(element) {
-      element.addEventListener('click', function() {
-        var audioUrl = this.getAttribute('data-audio');
-        var audio = new Audio(audioUrl);
-        audio.play();
-      });
-    });
-  </script>
 </body>
 </html>
